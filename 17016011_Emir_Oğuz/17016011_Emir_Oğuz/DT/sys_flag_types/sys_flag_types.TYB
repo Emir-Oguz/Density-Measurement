@@ -1,0 +1,193 @@
+TYPE
+    Task_Name_Typ : ARRAY[0..9] OF BYTE;
+
+    Extended_Task_Info : STRUCT
+	    TaskName           : Task_Name_Typ;  (*1,53*) 
+	    TaskPrio           : INT;            (*1,54*)
+	    undocumented_0     : INT;
+	    TaskPeriod         : INT;            (*1,55*)
+	    TaskStack          : INT;            (*1,56*)
+	    unused_1           : INT;
+	    TaskWatchdog       : INT;            (*1,57*)
+	    undocumented_2     : INT;
+	    undocumented_3     : INT;
+	    undocumented_4     : INT;
+	    CurDuration        : INT;            (*1,58*)
+	    MinDuration        : INT;            (*1,59*)
+	    MaxDuration        : INT;            (*1,60*)
+	    undocumented_5     : INT;
+	    CurDelay           : INT;            (*1,61*)
+	    MinDelay           : INT;            (*1,62*)
+	    MaxDelay           : INT;            (*1,63*)
+    END_STRUCT;
+END_TYPE
+
+TYPE
+	Task_Name_eCLR : ARRAY[0..35] OF BYTE;
+	
+	Task_Info_eCLR : STRUCT
+		TaskStack       : INT;            (*1,64*)
+		TaskPrio        : INT;            (*1,65*)
+		TaskPeriod_us   : DINT;           (*1,66*)
+		TaskWatchdog_us : DINT;           (*1,67*)
+		TaskPeriod      : INT;            (*1,68*)
+		TaskWatchdog    : INT;            (*1,69*)
+		MinDuration_us  : DINT;           (*1,70*)
+		MaxDuration_us  : DINT;           (*1,71*)
+		CurDuration_us  : DINT;           (*1,72*)
+		MinDelay_us     : DINT;           (*1,73*)
+		MaxDelay_us     : DINT;           (*1,74*)
+		CurDelay_us     : DINT;           (*1,75*)
+		MinDuration     : INT;            (*1,76*)
+		MaxDuration     : INT;            (*1,77*)
+		CurDuration     : INT;            (*1,78*)
+		MinDelay        : INT;            (*1,79*)
+		MaxDelay        : INT;            (*1,80*)
+		CurDelay        : INT;            (*1,81*)
+		unused_1        : DINT;
+		unused_2        : DINT;
+		unused_3        : DINT;
+		unused_4        : DINT;
+		unused_5        : DINT;
+		unused_6        : DINT;
+		unused_7        : DINT;
+		unused_8        : DINT;
+		unused_9        : DINT;
+		TNameMaxSize    : INT;
+		TNameSize       : INT;
+		TaskName        : Task_Name_eCLR;
+	END_STRUCT;
+END_TYPE
+ 
+TYPE
+	PND_IO_32  : ARRAY[0..31]  OF BYTE;
+	PND_IO_64  : ARRAY[0..63]  OF BYTE;
+	PND_IO_128 : ARRAY[0..127] OF BYTE;
+	PND_IO_256 : ARRAY[0..255] OF BYTE;
+	PND_IO_512 : ARRAY[0..511] OF BYTE;
+END_TYPE
+
+TYPE
+	Redundancy_OPC_Struct : ARRAY[0..2] OF INT;
+END_TYPE
+ 
+TYPE
+    MBT_STATION_DIAG : STRUCT
+	    Status           : DWORD; (*1,82*)
+	                              (*1,83*)
+
+	    IP               : DWORD;
+	    OfflineCounter   : DWORD; (*1,84*)
+
+	    NetCycleAvg      : DWORD; (*1,85*)
+	    NetCycleMin      : DWORD; (*1,86*)
+	    NetCycleMax      : DWORD; (*1,87*)
+
+	    NetInCycleAvg    : DWORD; (*1,88*)
+	    NetInCycleMin    : DWORD; (*1,89*)
+	    NetInCycleMax    : DWORD; (*1,90*)
+
+	    NetOutCycleAvg   : DWORD; (*1,91*)
+	    NetOutCycleMin   : DWORD; (*1,92*)
+	    NetOutCycleMax   : DWORD; (*1,93*)
+
+	    InternalError1   : DWORD; (*1,94*)
+	    InternalError2   : DWORD; (*1,95*)
+
+	    ExceptionCounter : DWORD; (*1,96*)
+	    DiagReserved1    : BYTE;  (*1,97*)
+	    DiagReserved2    : BYTE;  (*1,98*)
+	    UnitID           : BYTE;  (*1,99*)
+	    DiagReserved3    : BYTE;  (*1,100*)
+    END_STRUCT;
+
+    MBT_STATION_CONTROL : STRUCT
+	    ctrlStatistics      : BYTE;  (*1,101*)
+	    ControlReserved1    : BYTE;  (*1,102*)
+	    ControlReserved2    : WORD;  (*1,103*)
+	    ControlReserved3    : DWORD; (*1,104*)
+    END_STRUCT;
+END_TYPE
+
+TYPE
+	MBS_SERVER_STATUS : STRUCT
+		AcceptCnt              : DWORD;
+		AcceptErrorCnt         : DWORD;
+		ReceiveErrorCnt        : DWORD;
+		ModbusRequestCnt       : DWORD;
+		ModbusExceptionCnt     : DWORD;
+
+		SocketErrorCode        : WORD;
+		TcpConnectedClients    : WORD;
+		LastExceptionRegister  : WORD;
+		LastExceptionRegLength : WORD;
+
+		LastExceptionNode      : BYTE;
+		LastExceptionFunction  : BYTE;
+		LastExceptionCode      : BYTE;
+		reserved               : BYTE;
+	END_STRUCT;
+END_TYPE
+
+TYPE
+	MBS_SERVER_CONTROL : STRUCT
+		Flags     : BYTE;
+		reserved1 : BYTE;
+		reserved2 : BYTE;
+		reserved3 : BYTE;
+	END_STRUCT;
+END_TYPE
+	
+TYPE
+	MBS_NODE_STATUS : STRUCT
+		ModbusRequestCnt   : DWORD;
+		ModbusExceptionCnt : DWORD;
+		Flags              : DWORD;
+		reserved           : DWORD;
+	END_STRUCT;
+END_TYPE
+
+TYPE 
+	PROFISAFE_DIAG_HEADER : STRUCT 
+		NumberOfFConn         : UINT; (*1,105*) 
+		PLCHostStatusByte     : BYTE; (*1,106*) 
+		SPNSAgentStatusByte   : BYTE; (*1,107*) 
+		CycleCount            : UINT;   (*1,108*) 
+	END_STRUCT;
+  
+	F_MESSAGE : ARRAY[0..15] OF BYTE; (*1,109*) 
+
+	F_DEVICE_DIAG : STRUCT 
+		FAddress     : WORD;      (*1,110*) 
+		F_WD_Time    : WORD;      (*1,111*) 
+		F_DataLenIn  : BYTE;      (*1,112*) 
+		F_MessageIn  : F_MESSAGE; (*1,113*) 
+		F_DataLenOut : BYTE;      (*1,114*) 
+		F_MessageOut : F_MESSAGE; (*1,115*) 
+	END_STRUCT; 
+
+	DEVICE_DIAG_LIST : ARRAY[0..255] OF F_DEVICE_DIAG; (*1,116*) 
+
+	PROFISAFE_DIAG : STRUCT 
+		ProfisafeDiagHeader : PROFISAFE_DIAG_HEADER; (*1,117*) 
+		FDeviceDiagnostics  : DEVICE_DIAG_LIST;      (*1,118*) 
+	END_STRUCT; 
+END_TYPE
+
+TYPE
+    OPCUA_STATUS_INFO           : STRUCT
+	  restartCount            : UDINT; (*1,139*)
+	  monitoredVariablesCount : UDINT; (*1,140*)
+	  sessionsCount           : UDINT; (*1,141*)
+	  isServerEnabled         : UDINT; (*1,142*)
+	  isLicensePresent        : UDINT; (*1,143*)
+	END_STRUCT;
+END_TYPE
+
+TYPE
+    IEC61850_TIMESTAMP : STRUCT
+	    Seconds     : DWORD;
+		Fractions   : DWORD;
+        TimeQuality : DWORD;
+    END_STRUCT;
+END_TYPE

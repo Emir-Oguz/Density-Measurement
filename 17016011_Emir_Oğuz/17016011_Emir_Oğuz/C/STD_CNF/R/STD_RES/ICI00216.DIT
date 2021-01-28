@@ -1,0 +1,76 @@
+(*
+T: FUNCTION_BLOCK Dis_Cal
+FW: NO
+CI#: 216
+QSL: 11
+QVE: 11
+QVPC: 11
+QPar: 4
+QFBI: 2
+*)
+@V 1 6 0
+Position	1	VAR	@TYP:10
+		     
+
+;
+
+@V 1 11 0
+Sensor_R	2	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 12 0
+Sensor_F	3	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 17 0
+Pos_1	4	VAR	@TYP:10
+		     
+
+;
+
+@V 1 22 0
+Distance	5	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 27 0
+Pos_2	6	VAR	@TYP:10
+		     
+
+;
+
+@V 1 32 0
+Goto_End_Control	7	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 37 0
+Velocity	8	VAR	@TYP:10
+		     
+
+;
+
+@V 1 38 0
+Acceleration	9	VAR	@TYP:10
+		     
+
+;
+
+@V 1 39 0
+TON_Sim_1	10	VAR	@FB:214
+		     
+
+;
+
+@V 1 40 0
+R_TRIG_1	11	VAR	@FB:202
+		     
+
+;
+

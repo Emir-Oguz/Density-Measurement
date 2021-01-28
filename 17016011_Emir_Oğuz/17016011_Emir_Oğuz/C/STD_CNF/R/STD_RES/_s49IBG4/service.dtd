@@ -1,0 +1,13 @@
+<!ELEMENT Sequences (Sequence*)>
+<!ELEMENT Sequence (Name, ServiceRequest+)>
+<!ELEMENT ServiceRequest (Name, RequestCode, Parameters?)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT RequestCode (#PCDATA)>
+<!ELEMENT Parameters (Param+)>
+<!ELEMENT Param (#PCDATA)>
+<!ATTLIST Param Datatype 
+   (unsigned8 |
+    unsigned16 | 
+    unsigned32 | 
+    octetString) #REQUIRED>
+<!ATTLIST Param Description CDATA #REQUIRED>

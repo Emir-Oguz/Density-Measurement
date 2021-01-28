@@ -1,0 +1,174 @@
+
+
+#CMD#
+#0x1303# Alarm_Stop_Request
+#0x0000# Parameter Count
+
+
+#CMD#
+#0x0760# Clear_Display_Request
+#0x0000# Parameter Count
+
+
+#CMD#
+#0x030E# Control_Parameterization_Request
+#0x0001# Parameter Count
+#0x0001# Start
+
+
+#CMD#
+#0x0306# Initiate_Load_Configuration_Request
+#0x0004# Parameter Count
+#0x0001# Mode: Loading new configuration
+#0x0001# Frame reference
+#0x0003# Device count
+#0x0000# Extension length
+
+
+#CMD#
+#0x0307# Load_Configuration_Request
+#0x000F# Parameter Count
+#0x001B# Used attributes
+#0x0001# Start entry number
+#0x0003# Device count
+#0x0100# Logical device number
+#0x0004# Length code | Ident code
+#0x0000# Device level
+#0xFFFF# Group number | Alternative
+#0x0101# Logical device number
+#0x01BE# Length code | Ident code
+#0x0001# Device level
+#0xFFFF# Group number | Alternative
+#0x0102# Logical device number
+#0x01BD# Length code | Ident code
+#0x0001# Device level
+#0xFFFF# Group number | Alternative
+
+
+#CMD#
+#0x0308# Terminate_Load_Configuration_Request
+#0x0001# Parameter Count
+#0x0002# Automatic PCP channel configuration
+
+
+#CMD#
+#0x0157# Switch_Var_ID_Access_Request
+#0x0003# Parameter Count
+#0x4942# Password
+#0x535F# ..
+#0x0001# Enable
+
+
+#CMD#
+#0x0750# Set_Value_Request
+#0x0019# Parameter Count
+#0x0008# Value Count
+#0x2210# Variable ID
+#0xFFFF# Preset Cycle Time (0 µs = free running)
+#0xFFFF# ..
+#0x1210# Variable ID
+#0x0000# Startup Delay Time (0 ms = deactivated)
+#0x0000# ..
+#0x2212# Variable ID
+#0x0002# Bus Warning Time (0 µs = deactivated)
+#0xBF20# ..
+#0x2215# Variable ID
+#0x0000# Error Message Warning Time Exceeded (0BD2)
+#0x0000# ..
+#0x2211# Variable ID
+#0x0003# Bus Timeout (0 µs = automatic)
+#0x0D40# ..
+#0x2204# Variable ID
+#0x0000# Behavior of input data in case of bus error
+#0x0000# ..
+#0x2200# Variable ID
+#0x0600# Operation Mode
+#0x0000# ..
+#0xA255# Variable ID
+#0x0000# Single-Channel Diagnostics
+#0x047C# ..
+
+
+#CMD#
+#0x0157# Switch_Var_ID_Access_Request
+#0x0003# Parameter Count
+#0x4942# Password
+#0x535F# ..
+#0x0000# Disable
+
+
+#CMD#
+#0x0152# Set_Indication_Request
+#0x0003# Parameter Count
+#0x0000# Indication ability
+#0x0004# Distribution
+#0x4341# Fault Indication via MXI
+
+
+#CMD#
+#0x0152# Set_Indication_Request
+#0x0003# Parameter Count
+#0x0000# Indication ability
+#0x0004# Distribution
+#0x5340# Device_State Indication via MXI
+
+
+#CMD#
+#0x0152# Set_Indication_Request
+#0x0003# Parameter Count
+#0x0000# Indication ability
+#0x0004# Distribution
+#0x6342# Bus_Error Indication via MXI
+
+
+#CMD#
+#0x0324# Initiate_Load_Process_Data_Reference_List_Request
+#0x0001# Parameter Count
+#0x0001# New PDRL
+
+
+#CMD#
+#0x0325# Load_Process_Data_Reference_List_Request
+#0x000D# Parameter Count
+#0x0002# Number of connections
+#0x0001# PDRL-Index
+#0x0101# Remote bus number | Local bus number
+#0x6010# PDD-Index
+#0x1000# Destination address (Byte)
+#0x0002# Destination address (Bit) | Consistency
+#0x00FF# Extension
+#0x4001# PDRL-Index
+#0x0000# Source address (Byte)
+#0x0002# Source address (Bit) | Consistency
+#0x0102# Remote bus number | Local bus number
+#0x6011# PDD-Index
+#0x00FF# Extension
+
+
+#CMD#
+#0x0326# Terminate_Load_Process_Data_Reference_List_Request
+#0x0000# Parameter Count
+
+
+#CMD#
+#0x030E# Control_Parameterization_Request
+#0x0001# Parameter Count
+#0x0000# Stop
+
+
+#CMD#
+#0x0711# Activate_Configuration_Request
+#0x0001# Parameter Count
+#0x0001# Frame Reference
+
+
+#CMD#
+#0x0701# Start_Data_Transfer-Request
+#0x0000# Parameter Count
+
+
+#CMD#
+#0x014F# Change_Exclusive_Rights_Request
+#0x0001# Parameter Count
+#0x0000# Release rights
+ 

@@ -1,0 +1,304 @@
+(*
+T: FUNCTION_BLOCK DenCalc
+FW: NO
+CI#: 213
+QSL: 49
+QVE: 49
+QVPC: 49
+QPar: 26
+QFBI: 13
+*)
+@V 1 6 0
+Start	1	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 7 0
+Stop	2	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 12 0
+Process_Lamp	3	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 17 0
+Servo_X_Neg_Limit	4	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 18 0
+Servo_X_Pos_Limit	5	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 19 0
+Servo_Y_Neg_Limit	6	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 20 0
+Servo_Y_Pos_Limit	7	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 21 0
+Servo_Z_Neg_Limit	8	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 22 0
+Servo_Z_Pos_Limit	9	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 27 0
+XPosLimFlag	10	VAR	@TYP:1
+		     
+
+;
+
+@V 1 28 0
+YPosLimFlag	11	VAR	@TYP:1
+		     
+
+;
+
+@V 1 29 0
+ZPosLimFlag	12	VAR	@TYP:1
+		     
+
+;
+
+@V 1 34 0
+Weight_IN	13	VAR_INPUT	@TYP:10
+		     
+
+;
+
+@V 1 39 0
+OK	14	VAR	@TYP:1
+		     
+
+;
+
+@V 1 44 0
+Sensor_X	15	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 45 0
+Sensor_Y	16	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 46 0
+Sensor_Z	17	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 51 0
+Done	18	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 52 0
+Error	19	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 53 0
+l	20	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 54 0
+w	21	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 55 0
+h	22	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 56 0
+Volume	23	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 57 0
+Density	24	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 58 0
+Servo_X_Goto_Start	25	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 59 0
+Servo_X_Goto_End	26	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 60 0
+Servo_Y_Goto_Start	27	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 61 0
+Servo_Y_Goto_End	28	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 62 0
+Servo_Z_Goto_Start	29	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 63 0
+Servo_Z_Goto_End	30	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 68 0
+X_F	31	VAR	@TYP:1
+		     
+
+;
+
+@V 1 69 0
+Y_F	32	VAR	@TYP:1
+		     
+
+;
+
+@V 1 70 0
+Z_F	33	VAR	@TYP:1
+		     
+
+;
+
+@V 1 71 0
+X_R	34	VAR	@TYP:1
+		     
+
+;
+
+@V 1 72 0
+Y_R	35	VAR	@TYP:1
+		     
+
+;
+
+@V 1 73 0
+Z_R	36	VAR	@TYP:1
+		     
+
+;
+
+@V 1 74 0
+F_TRIG_1	37	VAR	@FB:206
+		     
+
+;
+
+@V 1 75 0
+F_TRIG_2	38	VAR	@FB:206
+		     
+
+;
+
+@V 1 76 0
+F_TRIG_3	39	VAR	@FB:206
+		     
+
+;
+
+@V 1 77 0
+R_TRIG_1	40	VAR	@FB:202
+		     
+
+;
+
+@V 1 78 0
+R_TRIG_2	41	VAR	@FB:202
+		     
+
+;
+
+@V 1 79 0
+R_TRIG_3	42	VAR	@FB:202
+		     
+
+;
+
+@V 1 80 0
+R_TRIG_4	43	VAR	@FB:202
+		     
+
+;
+
+@V 1 81 0
+R_TRIG_5	44	VAR	@FB:202
+		     
+
+;
+
+@V 1 82 0
+R_TRIG_6	45	VAR	@FB:202
+		     
+
+;
+
+@V 1 83 0
+Dis_Cal_1	46	VAR	@FB:216
+		     
+
+;
+
+@V 1 84 0
+Dis_Cal_2	47	VAR	@FB:216
+		     
+
+;
+
+@V 1 85 0
+Dis_Cal_3	48	VAR	@FB:216
+		     
+
+;
+
+@V 1 86 0
+RS_1	49	VAR	@FB:207
+		     
+
+;
+

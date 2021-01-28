@@ -1,0 +1,28 @@
+(*
+T: FUNCTION SUB_T_T
+FW: YES	INL_PN SUB SKIP_IMAGE
+CI#: 78
+QSL: 0
+QVE: 3
+QPar: 3
+QFBI: 0
+*)
+
+IN1	1	VAR_INPUT	@TYP:12	
+	
+
+;
+PFW:
+
+IN2	2	VAR_INPUT	@TYP:12	
+	
+
+;
+PFW: 
+
+SUB_T_T	3	VAR_OUTPUT	@TYP:12	
+	
+
+;
+PFW: 
+

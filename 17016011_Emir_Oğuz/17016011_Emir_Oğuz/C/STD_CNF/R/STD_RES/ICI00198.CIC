@@ -1,0 +1,24 @@
+(*
+T: FUNCTION LIMIT
+FW: YES
+CI#: 198
+QSL: 0
+QJM: 2
+QJ: 2
+QR: 1
+*)
+		LD	@FUV 2
+		GE	@FUV 1
+		JMPCN	@LBL 1
+		LD	@FUV 2
+		ST	@FUV 4
+		JMP	@LBL 2
+	@LBL 1		
+		LD	@FUV 1
+		ST	@FUV 4
+	@LBL 2		
+		LD	@FUV 4
+		LE	@FUV 3
+		RETC
+		LD	@FUV 3
+		ST	@FUV 4

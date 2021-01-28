@@ -1,0 +1,14 @@
+(*
+T: FUNCTION_BLOCK Dis_Cal
+FW: NO
+CI#: 216
+QSL: 11
+QVE: 11
+QVPC: 11
+QPar: 4
+QFBI: 2
+*)
+Distance	@IV 5	@TYP:10	VAR_OUTPUT
+Goto_End_Control	@IV 7	@TYP:1	VAR_INPUT
+Sensor_F	@IV 3	@TYP:1	VAR_INPUT
+Sensor_R	@IV 2	@TYP:1	VAR_INPUT

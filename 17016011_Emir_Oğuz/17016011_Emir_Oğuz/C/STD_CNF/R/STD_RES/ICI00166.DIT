@@ -1,0 +1,33 @@
+(*
+T: FUNCTION MID
+FW: YES	SYS_CALL 21 SKIP_IMAGE
+CI#: 166
+QSL: 0
+QVE: 4
+QPar: 4
+QFBI: 0
+*)
+
+IN	1	VAR_INPUT	@TYP:16	
+	
+
+;
+PFW: REF
+
+L	2	VAR_INPUT	@TYP:27	
+	
+
+;
+PFW: VAL
+
+P	3	VAR_INPUT	@TYP:27	
+	
+
+;
+PFW: VAL
+
+MID	4	VAR_OUTPUT	@TYP:16	
+	
+
+;
+PFW: REF

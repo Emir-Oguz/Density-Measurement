@@ -1,0 +1,46 @@
+(*
+T: FUNCTION_BLOCK TON_Sim
+FW: NO
+CI#: 214
+QSL: 6
+QVE: 6
+QVPC: 6
+QPar: 4
+QFBI: 0
+*)
+@V 1 6 0
+IN	1	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 7 0
+PT	2	VAR_INPUT	@TYP:10
+		     
+
+;
+
+@V 1 12 0
+Q	3	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 13 0
+ET	4	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 18 0
+CLOCK_START	5	VAR	@TYP:10
+		     
+
+;
+
+@V 1 23 0
+CLOCK	6	VAR_EXTERNAL	@TYP:10
+@RV 6		     
+
+;
+

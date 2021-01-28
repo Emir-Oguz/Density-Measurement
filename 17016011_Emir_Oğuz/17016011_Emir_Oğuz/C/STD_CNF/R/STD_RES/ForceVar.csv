@@ -1,0 +1,9 @@
+Start,1,@GV,0,1,73,1,0
+Stop,1,@GV,0,1,73,2,0
+Process_Lamp,1,@GV,0,1,81,1,0
+Done,1,@GV,0,1,81,2,0
+Error,1,@GV,0,1,81,3,0
+Sensor_X,1,@GV,0,1,73,3,0
+Sensor_Y,1,@GV,0,1,73,4,0
+Sensor_Z,1,@GV,0,1,73,5,0
+TEST,1,@GV,0,1,73,6,0

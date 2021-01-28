@@ -1,0 +1,15 @@
+(*
+T: FUNCTION MUL_T_AI
+FW: YES
+CI#: 80
+QSL: 0
+QJM: 0
+QJ: 0
+*)
+		@USE_ENO	ENO
+		LD	@FUV 1
+		MUL_T(	@FUV 2
+		INT_TO_TIME
+		)
+		ST	@FUV 3
+		@END_ENO

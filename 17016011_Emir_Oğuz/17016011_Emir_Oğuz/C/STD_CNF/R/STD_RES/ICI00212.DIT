@@ -1,0 +1,238 @@
+(*
+T: PROGRAM Main
+FW: NO
+CI#: 212
+QSL: 38
+QVE: 38
+QVPC: 38
+QPar: 0
+QFBI: 5
+*)
+@V 1 6 0
+CLOCK	1	VAR_EXTERNAL	@TYP:10
+@RV 6		     
+
+;
+
+@V 1 11 0
+TON_Sim_1	2	VAR	@FB:214
+		     
+
+;
+
+@V 1 12 0
+DenCalc_1	3	VAR	@FB:213
+		     
+
+;
+
+@V 1 13 0
+ServoSim_X	4	VAR	@FB:215
+		     
+
+;
+
+@V 1 14 0
+ServoSim_Y	5	VAR	@FB:215
+		     
+
+;
+
+@V 1 15 0
+ServoSim_Z	6	VAR	@FB:215
+		     
+
+;
+
+@V 1 20 0
+Start	7	VAR_EXTERNAL	@TYP:1
+@RV 7		     
+
+;
+
+@V 1 21 0
+Stop	8	VAR_EXTERNAL	@TYP:1
+@RV 8		     
+
+;
+
+@V 1 26 0
+Servo_X_Neg_Limit	9	VAR	@TYP:1
+		     
+
+;
+
+@V 1 27 0
+Servo_X_Pos_Limit	10	VAR	@TYP:1
+		     
+
+;
+
+@V 1 28 0
+Servo_Y_Neg_Limit	11	VAR	@TYP:1
+		     
+
+;
+
+@V 1 29 0
+Servo_Y_Pos_Limit	12	VAR	@TYP:1
+		     
+
+;
+
+@V 1 30 0
+Servo_Z_Neg_Limit	13	VAR	@TYP:1
+		     
+
+;
+
+@V 1 31 0
+Servo_Z_Pos_Limit	14	VAR	@TYP:1
+		     
+
+;
+
+@V 1 32 0
+Pos_X	15	VAR	@TYP:10
+		     
+
+;
+
+@V 1 33 0
+Vel_X	16	VAR	@TYP:10
+		     
+
+;
+
+@V 1 34 0
+Acc_X	17	VAR	@TYP:10
+		     
+
+;
+
+@V 1 35 0
+Pos_Y	18	VAR	@TYP:10
+		     
+
+;
+
+@V 1 36 0
+Vel_Y	19	VAR	@TYP:10
+		     
+
+;
+
+@V 1 37 0
+Acc_Y	20	VAR	@TYP:10
+		     
+
+;
+
+@V 1 38 0
+Pos_Z	21	VAR	@TYP:10
+		     
+
+;
+
+@V 1 39 0
+Vel_Z	22	VAR	@TYP:10
+		     
+
+;
+
+@V 1 40 0
+Acc_Z	23	VAR	@TYP:10
+		     
+
+;
+
+@V 1 41 0
+Weight_IN	24	VAR	@TYP:10
+		     
+
+;
+
+@V 1 46 0
+Sensor_X	25	VAR_EXTERNAL	@TYP:1
+@RV 12		     
+
+;
+
+@V 1 47 0
+Sensor_Y	26	VAR_EXTERNAL	@TYP:1
+@RV 13		     
+
+;
+
+@V 1 48 0
+Sensor_Z	27	VAR_EXTERNAL	@TYP:1
+@RV 14		     
+
+;
+
+@V 1 49 0
+Process_Lamp	28	VAR_EXTERNAL	@TYP:1
+@RV 9		     
+
+;
+
+@V 1 50 0
+Done	29	VAR_EXTERNAL	@TYP:1
+@RV 10		     
+
+;
+
+@V 1 51 0
+Error	30	VAR_EXTERNAL	@TYP:1
+@RV 11		     
+
+;
+
+@V 1 56 0
+length	31	VAR	@TYP:10
+		     
+
+;
+
+@V 1 57 0
+width	32	VAR	@TYP:10
+		     
+
+;
+
+@V 1 58 0
+height	33	VAR	@TYP:10
+		     
+
+;
+
+@V 1 59 0
+Volume	34	VAR	@TYP:10
+		     
+
+;
+
+@V 1 60 0
+Density	35	VAR	@TYP:10
+		     
+
+;
+
+@V 1 65 0
+TEST	36	VAR_EXTERNAL	@TYP:1
+@RV 15		     
+
+;
+
+@V 1 70 0
+TEST2	37	VAR	@TYP:1
+		     
+
+;
+
+@V 1 71 0
+ET	38	VAR	@TYP:10
+		     
+
+;
+

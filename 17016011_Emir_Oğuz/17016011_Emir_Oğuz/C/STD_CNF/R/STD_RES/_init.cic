@@ -1,0 +1,20 @@
+(*
+T: INITCODE INIT
+FW: No
+CI#: 0
+QSL: 0
+QJM: 0
+QJ: 0
+*)
+
+		@UP_HEAD	@DEF_FB 0.0.2
+		@UP_END	@NULL
+
+		@UP_HEAD	@DEF_SPG 0
+		@CALFB0	@NULL
+		@UP_END	@NULL
+
+		@UP_HEAD	@DEF_SPG 1
+		@CALFB0	@NULL
+		@UP_END	@NULL
+

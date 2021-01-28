@@ -1,0 +1,28 @@
+(*
+T: FUNCTION MUL_T_AN
+FW: YES	INLINE MUL_T SKIP_IMAGE
+CI#: 86
+QSL: 0
+QVE: 3
+QPar: 3
+QFBI: 0
+*)
+
+IN1	1	VAR_INPUT	@TYP:12	
+	
+
+;
+PFW:
+
+IN2	2	VAR_INPUT	@TYP:25	
+	
+
+;
+PFW:
+
+MUL_T_AN	3	VAR_OUTPUT	@TYP:12	
+	
+
+;
+PFW:
+

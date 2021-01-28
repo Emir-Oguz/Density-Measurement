@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Sequences SYSTEM "Service.dtd">
+<Sequences>
+	<Sequence>
+		<Name>Bus_Timing</Name>
+		<ServiceRequest>
+			<Name>Set_Value_Request</Name>
+			<RequestCode>0x0750</RequestCode>
+			<Parameters>
+				<Param Description="Value Count" Datatype="unsigned16">1</Param>
+				<Param Description="Variable ID" Datatype="unsigned16">0x2200</Param>
+				<Param Description="Bus Operation Mode (ASYMSI)" Datatype="unsigned32">0x06000000</Param>
+			</Parameters>
+		</ServiceRequest>
+	</Sequence>
+</Sequences>

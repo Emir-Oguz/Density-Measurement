@@ -1,0 +1,82 @@
+(*
+T: FUNCTION_BLOCK ServoSim
+FW: NO
+CI#: 215
+QSL: 12
+QVE: 12
+QVPC: 12
+QPar: 7
+QFBI: 0
+*)
+@V 1 6 0
+Servo_Goto_Start	1	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 7 0
+Servo_Goto_End	2	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 12 0
+Servo_Neg_Limit	3	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 13 0
+Servo_Pos_Limit	4	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 14 0
+Servo_Pos	5	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 15 0
+Servo_Vel	6	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 16 0
+Servo_Acc	7	VAR_OUTPUT	@TYP:10
+		     
+
+;
+
+@V 1 21 0
+vel_lim	8	VAR	@TYP:10
+		     
+
+;
+
+@V 1 22 0
+acc_lim	9	VAR	@TYP:10
+		     
+
+;
+
+@V 1 23 0
+Servo_Start_Pos	10	VAR	@TYP:10
+		     
+
+;
+
+@V 1 24 0
+Servo_End_Pos	11	VAR	@TYP:10
+		     
+
+;
+
+@V 1 25 0
+Pos_Err	12	VAR	@TYP:10
+		     
+
+;
+
